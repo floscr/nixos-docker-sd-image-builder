@@ -27,7 +27,7 @@ services:
         # of the Raspberry Pi 4 image.
         # note: if changing this after having already executed `run.sh`, the containers need to
         # be rebuilt with `./run.sh up --build`.
-        #DISABLE_ZFS_IN_INSTALLER: "y"
+        DISABLE_ZFS_IN_INSTALLER: "y"
     working_dir: /home/nixos
     # Main command line, left here so it can be changed easily. The container will:
     # - setup the environment. This includes adding the Nix executables to $PATH, along with the
