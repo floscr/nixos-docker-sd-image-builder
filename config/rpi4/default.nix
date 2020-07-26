@@ -26,7 +26,7 @@
 
   sdImage = {
     # This might need to be increased when deploying multiple configurations.
-    firmwareSize = 128;
+    firmwareSize = 1024;
     # TODO: check if needed.
     populateFirmwareCommands =
       "${config.system.build.installBootLoader} ${config.system.build.toplevel} -d ./firmware";
